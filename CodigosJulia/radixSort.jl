@@ -17,12 +17,14 @@ function radixsort(ordenar::Vector{Int})
     arreglo
 end
  
-function test()
-    arrays = [[1180, 450, -705, -90, -802, 24, 2, 66], [-4, 5, -26, 58, -990, 331, 331, 990, -1837, 2028]]
-    for array in arrays 
-        println(radixsort(array))
-    end
-end
+####### Prueba con 2 subarreglos
+#function test()
+#    arrays = [[1180, 450, -705, -90, -802, 24, 2, 66], [-4, 5, -26, 58, -990, 331, 331, 990, -1837, 2028]]
+#    for array in arrays 
+#        println(radixsort(array))
+#    end
+#end
  
-test()
- ## PONER COMENTARIOS
+####### PRueba n^2
+#array = rand(1:2^10, 100)
+#println(radixsort(array))

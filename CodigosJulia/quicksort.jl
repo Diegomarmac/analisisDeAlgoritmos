@@ -21,7 +21,7 @@ function quicksort!(arreglo,i=1,j=length(arreglo))
     return arreglo
 end
 
-########### TEsting
+########### Testing
 arregloAleatorio = rand(-10:10, 10)
 println("un arrelo aleatorio desordenado: $arregloAleatorio ")
 println("Ahora aparece ordenado! ", quicksort!(arregloAleatorio))
