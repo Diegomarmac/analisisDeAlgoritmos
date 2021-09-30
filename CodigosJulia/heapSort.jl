@@ -3,7 +3,7 @@ function swap(arreglo, i, j)
 end
 
 #####Recordar que el uso de ! al final del nombre de una función en Julia
-### es unac convención para indicar que los argumentos son
+### es una convención para indicar que los argumentos son
 ## pass-by-sharing 
 
 function pd!(arreglo, primero, ultimo)

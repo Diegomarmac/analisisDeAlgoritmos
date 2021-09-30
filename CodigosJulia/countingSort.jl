@@ -16,7 +16,21 @@ function countsort(arreglo::Vector{Int64})
     return arregloOrdenado
 end
  
+################## Caso de los 2 arreglos y su suma máxima
+arregloUno = rand(1:20,10)
+arregloDos = rand(1:20,10)
+println("Arreglos desordenados $arregloUno")
+println(arregloDos)
+arregloUno = countsort(arregloUno)
+arregloDos = countsort(arregloDos)
+println("Arreglos Ordenados")
+println(arregloUno)
+println(arregloDos)
+maximaUno = last(arregloUno)
+maximaDos = last(arregloDos)
+println("La suma máxima es $(maximaUno + maximaDos) ")
 
+#########################
 #v = rand(1:2 ^ 10, 20)
 #v = rand(1:12,1000) Problema de los 1000 cumpleaños
-println("Arreglo de Enteros Desordenados: $v\n Ya ordenados: $(countsort(v))")
+#println("Arreglo de Enteros Desordenados: $v\n Ya ordenados: $(countsort(v))")
