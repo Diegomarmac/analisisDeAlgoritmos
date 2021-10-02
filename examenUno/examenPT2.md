@@ -41,7 +41,3 @@ comparadorUno = 0 _si se programa en Julia, inicializar en 1_
 
 
 comparadorDos = 0 _si se programa en Julia, inicializar en 1_
-
-## Sobre el algoritmo
-Las primeras veces intentando este algoritmo llegaba a $\theta(n)$ hasta que se me ocurrió usar una especie de _mutación_ de __binary search__, se me ocurrió ya que el tiempo de ese algoritmo es $\theta(log n)$
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}]
