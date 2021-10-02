@@ -1,6 +1,4 @@
 ## find(arregloA, arregloB, numeroABuscar, comparadorUno, comparadorDos)
-__Todos los -1 se omiten si programamos en Julia__  
-
 
 __Es una adaptación de binary search para dos arreglos que juntos son la union de un tercero__  
 
