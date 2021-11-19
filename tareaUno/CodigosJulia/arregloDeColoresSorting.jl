@@ -14,26 +14,26 @@ function sortingColores(arregloAOrdenar)
     arregloDeAzules   = []
     i = 1
     
-    arregloCopy = deepcopy(arregloAOrdenar)
+    arregloCopy = deepcopy(arregloAOrdenar)  # TIempo 0(1)
 
     for index in eachindex(arregloAOrdenar)
-        if color(arregloAOrdenar, index) == "r"
+        if color(arregloAOrdenar, index) == "r" # TIempo 0(1)
             append!(arregloDeRojos, index)
-        elseif color(arregloAOrdenar, index) == "v"
+        elseif color(arregloAOrdenar, index) == "v" # TIempo 0(1)
             append!(arregloDeVerdes, index)
-        elseif color(arregloAOrdenar, index) == "a"
+        elseif color(arregloAOrdenar, index) == "a" # TIempo 0(1)
             append!(arregloDeAzules, index)
-        else
-            append!(arregloDeErrores,index)
+        else                                           # TIempo 0(n)
+            append!(arregloDeErrores,index)             # Esto es opcional, como gestión de errores o casos extraños
         end
     end
 
-    append!(arregloConIndices,arregloDeVerdes)
-    append!(arregloConIndices,arregloDeRojos)
-    append!(arregloConIndices,arregloDeAzules)
+    append!(arregloConIndices,arregloDeVerdes)      # TIempo 0(1)
+    append!(arregloConIndices,arregloDeRojos)       # TIempo 0(1)
+    append!(arregloConIndices,arregloDeAzules)      # TIempo 0(1)
 
-    for element in arregloConIndices
-        intercambio(arregloAOrdenar,arregloCopy,i,element)
+    for element in arregloConIndices                   
+        intercambio(arregloAOrdenar,arregloCopy,i,element) # Just a Swap utlity to save time
         i+=1
     end
 
