@@ -1,5 +1,6 @@
 # Readme
 El proyecto fue creado pensado para su lectura offline, por lo que aunque está en Github, lo mejor es que lo bajes y lo leas, si quieres leerlo en Github, solo sigue los nombres de los archivos como lo pongo en el índice, pero esto será tedioso, he puesto links entre los archivos que GIthub por seguridad los elimina.
+He creado esto en solitario, Diego Ivan Martinez Acevedo
 
 # Índice
 1. [Notas de Analisis de Algoritmos Parte Uno](./notasDeAnalisisDeAlgoritmosPT1.ipynb)
