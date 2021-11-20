@@ -33,3 +33,9 @@ He creado esto en solitario, Diego Ivan Martinez Acevedo
             1. Costos y grafos de peso
             2. Implementación
     
+# Bibliografía
+1. Aditya Y. Bhargava. (2016). Grokking Algorithms: An illustrated guide for programmers and other curious people. E.U.A: Manning Publications.
+2. Rishal Hurbans. (2020). Grokking Artificial Intelligence Algorithms. E.U.A: Manning Publications.
+3. Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest y Clifford Stein. (2009). Introducción a los algoritmos. E.U.A: MIT Press.
+4. Jay Wengrow. (2017). A Common-Sense Guide to Data Structures and Algorithms. E.U.A: Pragmatic Bookshelf.
+5. Christian Rubio Montiel(2021). Análisis de Algoritmos
