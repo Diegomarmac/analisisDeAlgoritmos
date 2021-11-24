@@ -47,3 +47,29 @@ Sea $g_1$ la parada más lejana que podemos alcanzar desde el incio, entonces re
 
 ### 16.2-5
 Tomemos el intervalo más a la izquierda, este intervalo contiene el punto más lejano a la izquierda, de modo que el lado izquierdo contiene el punto más lejano a la izquierda, así que sólo quitamos cualquier punto a cualquier distancia al punto más a la izquierda y repetimos esto hasta acabar, como en cada paso exista una solución óptima para donde colocar el intervalo más a la izquierda, está solución es la solución óptima.
+
+### 16.2-6
+Primero hay que computar el valor de cada objeto, este valor será igual a la cantidad economica por el peso. Se usa el siguiente acercamiento recursivo:  
+Encontrar el objeto de valor que contenga el valor mediana, esto se resolvió en el capitulo 9, usando lo visto ahí, esto nos toma tiempo linear, luego, la suma de los pesos de todos aquellos objetos por arriba de la mediana lo denominaremos M, si M excede W entonces sabemos que la solución al problema fraccional recae en tomar los objetos de este conjunto. Con esto estamos resolviendo el problema fraccional con un _input_ de $\frac{n}{2}$; pero ahora queda el caso en donde M **no** excede W, en este caso debemos resolver pensando en los objetos de menor valor con un peso máximo de W - M.  
+Sea T(n) el tiempo de ejecución del algoritmo, sabemos que podemos resolverlo cuando exista u onjeto en tiempo constante, la recursión nos queda: $T(n) = T(\frac{n}{2}) + cn$ y $T(1) = d$ lo que nos da un tiempo de $O(n)$
+
+## 16.3
+### 16.3-1
+Si tenemos $x.freq = b.freq$ entonces sabemos que b está sujeta a la frecuencia más baja. Esto significa que por lo menos existen dos _algo_ con la menor frecuencia, entonces $y.freq = x.freq$, además, si se cumple que:  
+$x.freq \leq a.freq \leq b.freq = x.freq$  
+Entonces tenemos que $a.freq = x.freq$
+
+### 16.3-2
+Sea T un árbol binario que corresponde al óptimo código prefix, supongamos T no está lleno, sea n un nodo cuyo nodo hijo es x, entonces T' sería el árbol que resulta de remover n y poner en ese lugar x; ahora, sea m un nodo hoja que es descendiente de x, entonces tenemos:  
+![sumatoria 16-3-2](../images/16-3-2.png)  
+Lo cual contradice que T fuese óptimo, por lo tanto cualquier árbol binario que corresponda a un óptimo código prefix deberá estar lleno.
+
+### 16.3-3
+Un óptimo código Huffman sería:
+![optimal Huffman code](../images/16-3-3.png)  
+Podríamos verlo como tener los n-ésimos primeros números Fibonacci como frecuencias de modo que $k < n-ésima$ letra más frecuente tiene un _codeword_ $0^{k-1}1$ y la n-ésima más frecuente letra tiene $0^{n-1}$
+
+### 16.3-4
+Sea x un nodo hoja, entonces $x.freq$ es agregado al costo de cada nodo interno que sea un ancestro de x exactamente una sola vez, por lo que el nuevo costo computacional es $x.freq.d_T(x)$ que es el mismo que antes, por lo que vemos que el costo computacional es equivalente.
+
+### 16.3-5
