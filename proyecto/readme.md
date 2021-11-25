@@ -29,7 +29,7 @@ He creado esto en solitario, Diego Ivan Martinez Acevedo
             1. BFS
                 1. [Programación Dinamica + BFS/DFS](./EjemplosProgramacionDinamica.ipynb)
             2. DFS
-            3. [Programación Dinamica + BFS/DFS](https://github.com/Diegomarmac/sudokuBFS-DFS)
+            3. [Sudoku BFS + DFS](https://github.com/Diegomarmac/sudokuBFS-DFS)
         2. Dijkstra
             1. Costos y grafos de peso
             2. [Implementación](./dijsktraImplementation.ipynb)
