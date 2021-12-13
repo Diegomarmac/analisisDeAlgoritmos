@@ -8,7 +8,7 @@ He creado esto en solitario, Diego Ivan Martinez Acevedo
     1. Tésis Church-Turing
     2. Máquinas de Turing
     3. Verificación de un algoritmo
-    4. Técnicas vásicas del Análisis de algoritmos
+    4. Técnicas básicas del Análisis de algoritmos
         1. Divide and Conquer
         2. Quicksort
         3. Heapsort
